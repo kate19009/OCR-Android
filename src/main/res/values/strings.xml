@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="button">Button</string>
+    <string name="button2">Button</string>
+    <string name="help">HELP</string>
+    <string name="start">REALTIME</string>
+    <string name="no_text_available">No text available</string>
+</resources>

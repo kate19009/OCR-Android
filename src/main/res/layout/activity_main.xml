@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bback"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttH"
+        android:layout_width="183dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="508dp"
+        android:background="@drawable/my_button_bg"
+        android:text="@string/help"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttSt"
+        android:layout_width="182dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/my_button_bg"
+        android:text="@string/start"
+        app:layout_constraintBottom_toTopOf="@+id/buttH"
+        app:layout_constraintStart_toStartOf="@+id/buttH" />
+
+    <Button
+        android:id="@+id/buttPh"
+        android:layout_width="182dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="356dp"
+        android:background="@drawable/my_button_bg"
+        android:text="PHOTO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="415dp"
+                android:layout_height="85dp"
+                android:background="?attr/colorPrimary">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.constraint.ConstraintLayout>
